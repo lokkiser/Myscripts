@@ -89,19 +89,20 @@ else :
     print ("-")
     
 
-for duty in range(0,10,1):
-    subprocess.run(f"/home/user/RPi-USB-Brightness/64/lite/Raspi_USB_Backlight_nogui -b {duty}", shell=True)
-    print ("duty ",duty)
-    #pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
-    sleep(1)
-sleep(0.5)
+# for duty in range(0,10,1):
+#     subprocess.run(f"/home/user/RPi-USB-Brightness/64/lite/Raspi_USB_Backlight_nogui -b {duty}", shell=True)
+#     print ("duty ",duty)
+#     #pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
+#     sleep(1)
+# sleep(0.5)
+#
+# for duty in range(10,-1,-1):
+#     subprocess.run(f"/home/user/RPi-USB-Brightness/64/lite/Raspi_USB_Backlight_nogui -b {duty}", shell=True)
+#     print ("duty ",duty)
+#     #pi_pwm.ChangeDutyCycle(duty)
+#     sleep(1)
+# sleep(0.5)
+#
+#
 
-for duty in range(10,-1,-1):
-    subprocess.run(f"/home/user/RPi-USB-Brightness/64/lite/Raspi_USB_Backlight_nogui -b {duty}", shell=True)
-    print ("duty ",duty)
-    #pi_pwm.ChangeDutyCycle(duty)
-    sleep(1)
-sleep(0.5)
-
-
-
+initial = "120_sec"
